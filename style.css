@@ -228,58 +228,70 @@ nav {
 }
 
 /* Experience Section */
+/* Experience Section - FIXED */
 .experience-timeline {
     max-width: 800px;
     margin: 0 auto;
     position: relative;
+    padding-left: 20px;
 }
 
 .experience-timeline::before {
     content: '';
     position: absolute;
-    left: 30px;
+    left: 100px; /* Moved from 30px to 100px */
     top: 0;
     bottom: 0;
-    width: 2px;
+    width: 3px;
     background: var(--primary);
+    border-radius: 2px;
 }
 
 .experience-item {
     display: flex;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
     position: relative;
 }
 
 .experience-date {
-    width: 60px;
+    width: 100px; /* Increased from 60px */
     padding-right: 20px;
     text-align: right;
     font-weight: 600;
     color: var(--primary);
+    font-size: 0.95rem;
+    flex-shrink: 0; /* Prevents shrinking */
 }
 
 .experience-dot {
     position: absolute;
-    left: 23px;
+    left: 94px; /* 100px - 6px (half of dot width) */
     width: 16px;
     height: 16px;
     background: var(--primary);
     border-radius: 50%;
-    border: 4px solid var(--dark);
+    border: 4px solid #0a0a0f;
+    box-shadow: 0 0 0 2px var(--primary);
+    top: 8px; /* Aligns with first line of text */
 }
 
 .experience-content {
     flex: 1;
-    padding-left: 40px;
+    padding-left: 30px;
+    position: relative;
 }
 
 .experience-content h3 {
     margin-bottom: 5px;
+    color: var(--light);
+    font-size: 1.3rem;
 }
 
 .experience-company {
     color: var(--gray);
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+    font-style: italic;
+    font-size: 1rem;
 }
 
 .experience-content ul {
@@ -288,10 +300,11 @@ nav {
 }
 
 .experience-content li {
-    margin-bottom: 8px;
+    margin-bottom: 10px;
     position: relative;
+    line-height: 1.5;
+    padding-left: 5px;
 }
-
 /* Skills Section */
 .skills-container {
     display: grid;

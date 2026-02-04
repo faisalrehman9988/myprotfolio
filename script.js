@@ -27,12 +27,12 @@ document.addEventListener('DOMContentLoaded', function() {
             "Tailwind CSS", "Responsive Design", "DOM Manipulation"
         ],
         backend: [
-            "PHP", "MySQL", "REST APIs", "XAMPP/WAMP", 
+            "PHP", "MySQL", "REST APIs", "Laravel", 
             "Session Management", "User Authentication"
         ],
         tools: [
-            "Git & GitHub", "VS Code", "Postman", "Figma",
-            "Chrome DevTools", "Problem Solving", "Team Collaboration"
+            "Git & GitHub", "VS Code", "Postman", "Canva",
+            "Chrome DevTools", "Figma"
         ]
     };
 
@@ -64,24 +64,8 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Projects data
+    // Projects data - ONLY Personal Portfolio Website
     const projects = [
-        {
-            title: "E-Commerce Store",
-            description: "Full-featured online shopping platform with user authentication, admin dashboard, product management (CRUD), shopping cart, and order processing system. Features include secure payment integration and responsive design.",
-            technologies: ["PHP", "MySQL", "HTML5", "CSS3", "JavaScript", "Bootstrap"],
-            icon: "fas fa-shopping-cart",
-            status: "Completed",
-            features: ["User Auth", "Admin Panel", "Shopping Cart", "Payment System"]
-        },
-        {
-            title: "University Management System",
-            description: "Comprehensive web application for university operations including student registration, course management, faculty dashboards, and grade tracking. Features role-based access control and real-time notifications.",
-            technologies: ["PHP", "MySQL", "JavaScript", "AJAX", "Chart.js"],
-            icon: "fas fa-university",
-            status: "Completed",
-            features: ["Student Portal", "Course Management", "Grade System", "Reporting"]
-        },
         {
             title: "Personal Portfolio Website",
             description: "Modern, responsive portfolio showcasing projects and skills. Implemented with CSS Grid and Flexbox, featuring smooth animations, contact form with validation, and optimized performance.",
@@ -195,14 +179,6 @@ document.addEventListener('DOMContentLoaded', function() {
             
             const action = this.querySelector('h4').textContent;
             console.log(`Contact action: ${action}`);
-            
-            if (action === 'Send an Email') {
-                // Email already handled by mailto link
-            } else if (action === 'WhatsApp Message') {
-                // WhatsApp already handled by link
-            } else if (action === 'View GitHub') {
-                // GitHub already handled by link
-            }
         });
     });
 
